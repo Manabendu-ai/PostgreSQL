@@ -3,3 +3,4 @@
 /**
   SELECT attrs FROM table_name CONSTRAINS
  */
+SELECT * FROM person;
