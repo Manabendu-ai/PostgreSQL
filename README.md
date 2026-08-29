@@ -44,8 +44,8 @@ Now the columns represent the attributes of the data points and each row represe
 <h1 align="center">
   Chapter - 1
 </h1>
-*Here the basic topics such as How to create a database, drop a database, create a table, drop a table,
-datatypes, inserting data into table and a basic select query.*
+Here the basic topics such as How to create a database, drop a database, create a table, drop a table,
+datatypes, inserting data into table and a basic select query.
 
 <h3>Create a database</h3>
 
@@ -76,7 +76,6 @@ There are some handful command which you can try out in your terminal with postg
 ### Drop a database
 >[!WARNING]
 > It is recommended not to use this command in a production database because this deletes your entire data from the database within a fraction of seconds.
-<br>
 ```sql
 DROP DATABASE database_name;
 ```
