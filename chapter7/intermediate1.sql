@@ -29,7 +29,9 @@ create table person (
     gender VARCHAR(20) NOT NULL ,
     email VARCHAR(100),
     date_of_birth DATE NOT NULL ,
-    country_of_birth VARCHAR(50)NOT NULL
+    country_of_birth VARCHAR(50)NOT NULL,
+    car_id BIGINT REFERENCES car(id),
+    UNIQUE (car_id)
 );
 
 CREATE TABLE car (
