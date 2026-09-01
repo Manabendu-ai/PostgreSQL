@@ -40,3 +40,18 @@
   LANGUAGE plpgsql;
 
  */
+
+/*
+Let's create a simple function that takes two paraments actual price and discount percent and returns the price
+after applying the discount.
+ */
+
+CREATE OR REPLACE FUNCTION discount_function(NUMERIC(12,2), NUMERIC(12,2))
+RETURNS NUMERIC(12,2)
+AS
+$$
+    BEGIN
+        RETURN $1 - ($1 * $2);
+    END;
+$$
+LANGUAGE plpgsql;
