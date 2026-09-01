@@ -74,3 +74,6 @@ ALTER COLUMN grade TYPE VARCHAR(2);
 -- Now let's update the grade column of the student table for all the student
 UPDATE student
 SET grade = grade(marks);
+
+-- retrieving the student table
+SELECT * FROM student;
