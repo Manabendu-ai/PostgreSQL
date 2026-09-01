@@ -29,5 +29,14 @@
 
   simple syntax:
 
+  CREATE OR REPLACE FUNCTION fn_name(parameter types)
+  RETURN retype
+  AS
+  $$
+  BEGIN
+   /* code block */
+  END;
+  $$
+  LANGUAGE plpgsql;
 
  */
