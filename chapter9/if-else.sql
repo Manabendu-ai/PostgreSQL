@@ -58,3 +58,7 @@ insert into student (id, first_name, last_name, marks) values ('004fb3aa-ba3e-44
 insert into student (id, first_name, last_name, marks) values ('2d320506-079b-494b-9e90-af55c74ee135', 'Colman', 'MacGorrie', 85.16);
 insert into student (id, first_name, last_name, marks) values ('6eae766b-8ce5-4df3-808c-0ec3fcfffdf3', 'Herb', 'Aggio', 84.29);
 insert into student (id, first_name, last_name, marks) values ('37a390a2-a47f-43e8-920e-903c60153ec4', 'Britte', 'Bukowski', 37.95);
+
+-- let's see the grade of each student
+
+SELECT first_name, grade(marks) AS grade FROM student;
