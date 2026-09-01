@@ -89,3 +89,8 @@ EXPLAIN ANALYZE
 SELECT * FROM users
 WHERE name = 'Archisman'; -- Seq Scan on users , Execution Time: 0.022 ms
 
+-- let's create an index on name column
+CREATE INDEX name_index
+ON users(name);
+
+
