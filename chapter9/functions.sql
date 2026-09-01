@@ -46,12 +46,15 @@ Let's create a simple function that takes two paraments actual price and discoun
 after applying the discount.
  */
 
-CREATE OR REPLACE FUNCTION discount_function(NUMERIC(12,2), NUMERIC(12,2))
+CREATE OR REPLACE FUNCTION discount_function(FLOAT, FLOAT)
 RETURNS NUMERIC(12,2)
 AS
 $$
     BEGIN
-        RETURN $1 - ($1 * $2);
+        RETURN $1 - ($1 * ($2/100));
     END;
 $$
 LANGUAGE plpgsql;
+
+SELECT * FROM discount_function(25000, 3); -- 3% discount
+SELECT * FROM discount_function(25000, 50); -- 50% discount
