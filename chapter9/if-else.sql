@@ -43,6 +43,7 @@ LANGUAGE plpgsql;
 -- Let's create a Students Table:
 CREATE TABLE student(
     id UUID PRIMARY KEY NOT NULL,
-    name VARCHAR(100) NOT NULL,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
     marks DOUBLE PRECISION NOT NULL
 );
