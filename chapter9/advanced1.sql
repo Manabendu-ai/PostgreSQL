@@ -43,7 +43,7 @@ CREATE TABLE users(
 );
 
 ALTER TABLE users
-ADD CONSTRAINT valid_email
+ADD CONSTRAINT validate_email
 CHECK ( email like '%@%');
 
 
