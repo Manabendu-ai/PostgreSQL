@@ -111,4 +111,11 @@ SELECT * FROM users;
 -- Let's grab the last user's name (out of 1000 data) last id = 1007:
 SELECT name FROM users where id = 1007; -- Pearle
 
+-- Let's search Pearle
+EXPLAIN ANALYZE
+SELECT * FROM users
+WHERE name = 'Pearle'; -- Index Scan using name_index on users, Execution Time: 0.024 ms
 
+/**
+  Now we see that postgres has used Index Scan here because the data was large.
+ */
