@@ -58,3 +58,19 @@ LANGUAGE plpgsql;
 
 SELECT * FROM discount_function(25000, 3); -- 3% discount
 SELECT * FROM discount_function(25000, 50); -- 50% discount
+
+
+-- Let's use Alias for the function parameters instead of $1 and so on.
+CREATE OR REPLACE FUNCTION discount_function(FLOAT, FLOAT)
+    RETURNS NUMERIC(12,2)
+AS
+$$
+    DECLARE actual_price ALIAS FOR $1;
+        discount ALIAS FOR $2;
+BEGIN
+    RETURN actual_price - (actual_price * (discount/100));
+END;
+$$
+    LANGUAGE plpgsql;
+
+SELECT * FROM discount_function(5000, 5); -- 5% discount
