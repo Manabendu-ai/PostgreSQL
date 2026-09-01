@@ -1,0 +1,1 @@
+-- parameter type {in*|out|inout|VARIADIC**} *default **variable number of arguments
