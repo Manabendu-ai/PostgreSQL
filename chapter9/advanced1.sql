@@ -74,12 +74,18 @@ WHERE email = 'archisman@nvidia.com'; -- Index Scan using users_email_key on use
 /**
   that's almost certainly a unique index auto-created by a UNIQUE constraint
  */
+--
+-- -- CREATE AN INDEX on email -- already it is indexed
+-- CREATE INDEX email_idx
+-- ON users(email);
+--
+-- -- Let's repeat the last query and see what changes has happened after adding index
+-- EXPLAIN ANALYZE
+-- SELECT * FROM users
+-- WHERE email = 'archisman@nvidia.com'; -- Seq Scan on users, Execution Time: 0.022 ms
 
--- CREATE AN INDEX on email
-CREATE INDEX email_idx
-ON users(email);
-
--- Let's repeat the last query and see what changes has happened after adding index
+-- let's search using name (without index)
 EXPLAIN ANALYZE
 SELECT * FROM users
-WHERE email = 'archisman@nvidia.com'; -- Seq Scan on users, Execution Time: 0.022 ms
+WHERE name = 'Archisman'; -- Seq Scan on users , Execution Time: 0.022 ms
+
