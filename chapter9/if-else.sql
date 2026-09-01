@@ -92,13 +92,13 @@ $$
             RETURN NULL;
 
         ELSIF firstName is NULL THEN
-            RETURN secondName;
+            RETURN INITCAP(secondName);
 
         ELSIF secondName is NULL THEN
-            RETURN firstName;
+            RETURN INITCAP(firstName);
 
         ELSE
-            RETURN concat_ws(' ',firstName, secondName);
+            RETURN concat_ws(' ',INITCAP(firstName), INITCAP(secondName));
 
         END IF;
 
@@ -113,4 +113,7 @@ ADD COLUMN full_name VARCHAR(100);
 -- Let's assign the full_name name column to the students using the makeFullName function
 UPDATE student
 SET full_name = makeFullName(first_name, last_name);
+
+-- let's retrieve the student table
+SELECT * FROM student;
 
