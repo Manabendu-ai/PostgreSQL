@@ -10,3 +10,6 @@ AS
         END;
     $$
 LANGUAGE plpgsql;
+
+-- swapping two numbers
+SELECT * FROM swap(64,74);
