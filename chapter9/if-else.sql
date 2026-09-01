@@ -105,3 +105,7 @@ $$
     END;
 $$
 LANGUAGE plpgsql;
+
+-- Let's create a column full_name in the student table
+ALTER TABLE student
+ADD COLUMN full_name VARCHAR(100);
