@@ -65,3 +65,9 @@ SELECT * FROM users;
 -- SEARCH a user without indexing using email
 SELECT * FROM users
 WHERE email = 'archisman@nvidia.com';
+
+
+-- ANALYZE the retrieval
+EXPLAIN ANALYZE
+SELECT * FROM users
+WHERE email = 'archisman@nvidia.com'; -- Index Scan using users_email_key on users, Execution Time: 0.028 ms
