@@ -54,3 +54,8 @@ VALUES
 ('Jevial', 'jevial@databricks.com', 'bengaluru'),
 ('Archisman', 'archisman@nvidia.com', 'Mumbai');
 
+-- checking the validate email constraint
+INSERT INTO users
+(name, email, city)
+VALUES
+    ('Deeksha', 'deeksha.adobe.com', 'gurgaon') ON CONFLICT DO NOTHING ;
