@@ -30,3 +30,6 @@ AS
     END;
     $$
 LANGUAGE plpgsql;
+
+-- let's test the getMean() function
+SELECT getMean(ARRAY [13,8,9,15,23]) AS mean;
