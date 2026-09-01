@@ -59,3 +59,9 @@ INSERT INTO users
 (name, email, city)
 VALUES
     ('Deeksha', 'deeksha.adobe.com', 'gurgaon') ON CONFLICT DO NOTHING ;
+
+SELECT * FROM users;
+
+-- SEARCH a user without indexing using email
+SELECT * FROM users
+WHERE email = 'archisman@nvidia.com';
