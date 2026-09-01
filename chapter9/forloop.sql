@@ -7,3 +7,26 @@
   /* code block*/
   END LOOP;
  */
+
+-- Let's create a function that takes in array as an input and computes the mean of it.
+
+CREATE OR REPLACE FUNCTION getMean(NUMERIC[])
+RETURNS NUMERIC
+AS
+    $$
+    DECLARE val NUMERIC := 0;
+        total NUMERIC := 0;
+        size NUMERIC := 0;
+        n_array ALIAS FOR $1;
+    BEGIN
+
+        FOREACH val IN ARRAY n_array
+        LOOP
+            total := total + val;
+            size := size + 1;
+        END LOOP ;
+
+        RETURN total/size;
+    END;
+    $$
+LANGUAGE plpgsql;
