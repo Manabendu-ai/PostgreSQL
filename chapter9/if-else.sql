@@ -77,3 +77,31 @@ SET grade = grade(marks);
 
 -- retrieving the student table
 SELECT * FROM student;
+
+/*
+ Let's create another function named : genFullName which will concat first and second name and return the full name.
+ */
+
+CREATE OR REPLACE FUNCTION makeFullName(firstName VARCHAR, secondName VARCHAR)
+RETURNS VARCHAR
+AS
+$$
+    BEGIN
+
+        IF firstName IS NULL AND secondName IS NULL THEN
+            RETURN NULL;
+
+        ELSIF firstName is NULL THEN
+            RETURN secondName;
+
+        ELSIF secondName is NULL THEN
+            RETURN firstName;
+
+        ELSE
+            RETURN concat_ws(' ',firstName, secondName);
+
+        END IF;
+
+    END;
+$$
+LANGUAGE plpgsql;
