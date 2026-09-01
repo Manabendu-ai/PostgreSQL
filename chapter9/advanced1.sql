@@ -103,3 +103,6 @@ WHERE name = 'Archisman'; -- Seq Scan on users , Execution Time: 0.012 ms
  We see that even after applying indexing we get a Seq Scan that's because our data is very small, so it's of no use to
  add an index. PostgreSQL is smart enough to use Seq Scan on a small data rather than applying index scan.
  */
+
+-- let's add more dummy data into this. Take mock data from mockaroo.com
+-- on the postgres terminal will run \i users.sql
