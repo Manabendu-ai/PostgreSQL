@@ -88,3 +88,8 @@ $$
 
 
 SELECT * FROM discount_function_new(15000, 4.5); -- 4.5% discount
+
+/**
+  note: function overloading doesn't happen here properly so it is better not to repeat the same function name, because
+  the earlier signature remains same.
+ */
