@@ -35,4 +35,11 @@
   We should apply indexing only for the read intensive databases not for write intensive databases.
  */
 
+CREATE TABLE users(
+    id BIGSERIAL PRIMARY KEY NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50)NOT NULL UNIQUE ,
+    city VARCHAR(50) NOT NULL
+);
+
 
