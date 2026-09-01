@@ -119,3 +119,17 @@ WHERE name = 'Pearle'; -- Index Scan using name_index on users, Execution Time: 
 /**
   Now we see that postgres has used Index Scan here because the data was large.
  */
+
+/**
+  When should we apply indexing?
+  -> Too much data
+  -> Read intensive
+  -> Lot of where clause
+
+  When should we not apply indexing?
+  -> Extra Storage,
+  -> Slower INSERT,
+  -> Slower UPDATE,
+  -> Slower DELETE,
+  -> Too many indexes = maintenance
+ */
