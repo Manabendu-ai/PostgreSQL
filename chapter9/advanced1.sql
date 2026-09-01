@@ -71,3 +71,8 @@ WHERE email = 'archisman@nvidia.com';
 EXPLAIN ANALYZE
 SELECT * FROM users
 WHERE email = 'archisman@nvidia.com'; -- Index Scan using users_email_key on users, Execution Time: 0.028 ms
+
+
+-- CREATE AN INDEX on email
+CREATE INDEX email_idx
+ON users(email);
