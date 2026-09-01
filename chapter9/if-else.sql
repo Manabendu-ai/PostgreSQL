@@ -66,3 +66,11 @@ SELECT first_name, grade(marks) AS grade FROM student;
 -- let's create a grade column on the student table
 ALTER TABLE student
 ADD COLUMN grade DOUBLE PRECISION;
+
+-- let's change the datatype of the grade column to VARCHAR
+ALTER TABLE student
+ALTER COLUMN grade TYPE VARCHAR(2);
+
+-- Now let's update the grade column of the student table for all the student
+UPDATE student
+SET grade = grade(marks);
