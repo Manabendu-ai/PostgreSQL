@@ -42,4 +42,8 @@ CREATE TABLE users(
     city VARCHAR(50) NOT NULL
 );
 
+ALTER TABLE users
+ADD CONSTRAINT valid_email
+CHECK ( email like '%@%');
+
 
