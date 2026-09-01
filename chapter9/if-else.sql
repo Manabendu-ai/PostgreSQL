@@ -109,3 +109,8 @@ LANGUAGE plpgsql;
 -- Let's create a column full_name in the student table
 ALTER TABLE student
 ADD COLUMN full_name VARCHAR(100);
+
+-- Let's assign the full_name name column to the students using the makeFullName function
+UPDATE student
+SET full_name = makeFullName(first_name, last_name);
+
