@@ -94,3 +94,7 @@ CREATE INDEX name_index
 ON users(name);
 
 
+-- let's repeat the query
+EXPLAIN ANALYZE
+SELECT * FROM users
+WHERE name = 'Archisman'; -- Seq Scan on users , Execution Time: 0.012 ms
