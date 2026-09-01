@@ -46,4 +46,11 @@ ALTER TABLE users
 ADD CONSTRAINT validate_email
 CHECK ( email like '%@%');
 
+INSERT INTO users
+(name, email, city)
+VALUES
+('Adnan', 'adnan@google.com', 'vizag'),
+('Pramith', 'pramith@texas.com', 'hyderabad'),
+('Jevial', 'jevial@databricks.com', 'bengaluru'),
+('Archisman', 'archisman@nvidia.com', 'Mumbai');
 
