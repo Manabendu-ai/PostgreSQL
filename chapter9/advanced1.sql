@@ -105,4 +105,10 @@ WHERE name = 'Archisman'; -- Seq Scan on users , Execution Time: 0.012 ms
  */
 
 -- let's add more dummy data into this. Take mock data from mockaroo.com
--- on the postgres terminal will run \i users.sql
+-- on the postgres terminal will run \i users.sql.
+
+SELECT * FROM users;
+-- Let's grab the last user's name (out of 1000 data) last id = 1007:
+SELECT name FROM users where id = 1007; -- Pearle
+
+
