@@ -62,3 +62,7 @@ insert into student (id, first_name, last_name, marks) values ('37a390a2-a47f-43
 -- let's see the grade of each student
 
 SELECT first_name, grade(marks) AS grade FROM student;
+
+-- let's create a grade column on the student table
+ALTER TABLE student
+ADD COLUMN grade DOUBLE PRECISION;
