@@ -42,10 +42,10 @@
     <file url="file://$PROJECT_DIR$/chapter7/INNER-JOINS.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
     <file url="file://$PROJECT_DIR$/chapter7/LEFT-JOINS.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
     <file url="file://$PROJECT_DIR$/chapter7/RIGHT-JOINS.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter8/advanced1.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter8/advanced2.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter8/advanced3.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter8/advanced4.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter8/CREATING-TABLE-WITH-UUID.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter8/EXPORTING-TO-CSV.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter8/EXTENSIONS.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter8/SERIAL-SEQUENCE.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
     <file url="file://$PROJECT_DIR$/chapter9/detailed-parameter-types.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
     <file url="file://$PROJECT_DIR$/chapter9/forloop.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
     <file url="file://$PROJECT_DIR$/chapter9/functions.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
