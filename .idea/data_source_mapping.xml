@@ -16,13 +16,13 @@
     <file url="file://$PROJECT_DIR$/Chapter2/ORDER-BY.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
     <file url="file://$PROJECT_DIR$/Chapter2/SELECT_WITH_SPECIFIC_COLUMNS.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
     <file url="file://$PROJECT_DIR$/Chapter2/WHERE-CLAUSE.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter3/basics1.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter3/basics2.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter3/basics3.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter3/basics4.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter3/basics5.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter3/basics6.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
-    <file url="file://$PROJECT_DIR$/chapter3/basics7.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter3/ALIAS.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter3/ARITHMETIC-OPERATORS.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter3/DISCOUNT-PROBLEM.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter3/MIN-MAX-AVG.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter3/NEW_CAR_TABLE.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter3/ROUND-PROBLEM.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
+    <file url="file://$PROJECT_DIR$/chapter3/SUM-PROBLEM.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
     <file url="file://$PROJECT_DIR$/chapter4/intermediate1.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
     <file url="file://$PROJECT_DIR$/chapter4/intermediate2.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
     <file url="file://$PROJECT_DIR$/chapter4/intermediate3.sql" value="8701d3fb-7914-4694-84f9-c13552e89c32" />
