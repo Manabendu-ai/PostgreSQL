@@ -14,3 +14,8 @@ FROM Employee
 WHERE salary > (
         SELECT AVG(salary) FROM Employee
 );
+
+-- In SQL, we have different types of subqueries
+-- 1) Scalar SubQuery
+-- 2) Multiple Row Subquery
+-- 3) Correlated Subquery
