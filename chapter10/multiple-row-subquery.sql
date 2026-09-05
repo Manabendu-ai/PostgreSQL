@@ -22,3 +22,27 @@ WHERE (dept, salary) in (
         GROUP BY dept
     )
 ORDER BY salary DESC LIMIT 1;
+
+-- single column multiple row subquery
+
+CREATE TABLE Department(
+    id BIGSERIAL PRIMARY KEY NOT NULL,
+    dept VARCHAR(50) NOT NULL,
+    LOCATION VARCHAR(50) NOT NULL
+);
+
+insert into Department (dept, location) values ('Electronics', 'Punjab');
+insert into Department (dept, location) values ('Automotive', 'Arunachal Pradesh');
+insert into Department (dept, location) values ('Tools', 'Bihar');
+insert into Department (dept, location) values ('Grocery', 'Meghalaya');
+insert into Department (dept, location) values ('Home', 'Chhattisgarh');
+insert into Department (dept, location) values ('Industrial', 'Pondicherr');
+insert into Department (dept, location) values ('Jewelry', 'Andaman and Nicobar Islands');
+insert into Department (dept, location) values ('Sports', 'Lakshadweep');
+insert into Department (dept, location) values ('Music', 'Lakshadweep');
+insert into Department (dept, location) values ('Movies', 'West Bengal');
+insert into Department (dept, location) values ('Outdoors', 'Himachal Pradesh');
+insert into Department (dept, location) values ('Kids', 'Punjab');
+insert into Department (dept, location) values ('Computers', 'Manipur');
+insert into Department (dept, location) values ('Sales', 'Jodhpur');
+insert into Department (dept, location) values ('Marketing', 'Gwalior');
