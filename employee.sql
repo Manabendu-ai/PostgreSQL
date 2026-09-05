@@ -1,8 +1,8 @@
 create table Employee (
-	id VARCHAR(50),
-	name VARCHAR(50),
-	email VARCHAR(50),
-	salary VARCHAR(50)
+	id UUID PRIMARY KEY NOT NULL ,
+	name VARCHAR(50) NOT NULL ,
+	email VARCHAR(50) UNIQUE NOT NULL ,
+	salary NUMERIC(19,2) NOT NULL
 );
 
 insert into Employee (id, name, email, salary) values ('e4834e26-2a94-4264-8c3d-3fac3a593926', 'Bilwa Jangid', 'Vaishno.Ganaka71@gmail.com', '946795.63');
