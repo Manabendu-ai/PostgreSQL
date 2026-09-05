@@ -4,3 +4,12 @@
  The processing of the subquery depends upon the values returned by the outer query.
  */
 
+-- Find the employees in each department who earns more than the avg salary of each department.
+
+SELECT e.*
+FROM Employee e
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM Employee
+    WHERE dept = e.dept
+);
