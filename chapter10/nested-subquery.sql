@@ -2,8 +2,19 @@
 
 SELECT * FROM Sales;
 
--- Find total sales of each store
 
-SELECT store_name, SUM(price)
-FROM Sales
-GROUP BY (store_name);
+SElECT *
+FROM
+    Sales s1
+WHERE (
+    SELECT SUM(price)
+    FROM Sales s2
+    WHERE s2.store_name = s1.store_name
+) > (
+        SELECT AVG(total_sales)
+        FROM (
+                SELECT SUM(s3.price) AS total_sales
+                FROM Sales s3
+                GROUP BY s3.store_name
+             ) t
+    );
