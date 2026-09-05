@@ -13,3 +13,11 @@ WHERE salary > (
     FROM Employee
     WHERE dept = e.dept
 );
+
+-- Find the departments who do not have any employees
+
+SELECT *
+FROM department d
+WHERE not EXISTS (
+    SELECT 1 FROM Employee e  WHERE d.dept = e.dept
+);
