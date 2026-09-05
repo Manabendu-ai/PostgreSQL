@@ -20,4 +20,5 @@ WHERE (dept, salary) in (
         SELECT dept, MAX(salary)
         FROM Employee
         GROUP BY dept
-    );
+    )
+ORDER BY salary DESC LIMIT 1;
